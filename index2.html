@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanos Creations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NavBar Section -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Justin Spanos' Portfolio</h1>
+        <p>Check out what I've been up to...</p>
+    </section>
+
+    <!-- New Services I Offer section -->
+    <section id="services">
+        <h2>Services I Offer</h2>
+        <div class="service-columns">
+            <div class="service-column">
+                <h3>Computer Technology</h3>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Software Programming</li>
+                    <!-- Add more computer technology services as needed -->
+                </ul>
+            </div>
+            <div class="service-column">
+                <h3>Sound Production</h3>
+                <ul>
+                    <li>Audio Engineering</li>
+                    <li>Music Production</li>
+                    <li>Sound Mixing</li>
+                    <!-- Add more sound production services as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Select a category:</p>
+        <ul>
+            <li><a href="#coding-portfolio">Coding Portfolio</a></li>
+            <li><a href="#music-portfolio">Music Portfolio</a></li>
+        </ul>
+
+        <!-- Coding Portfolio -->
+        <section id="coding-portfolio">
+            <h3>Coding Portfolio</h3>
+            <!-- Placeholder content for coding portfolio -->
+            <p>Your coding portfolio items go here.</p>
+        </section>
+
+        <!-- Music Portfolio -->
+        <section id="music-portfolio">
+            <h3>Music Portfolio</h3>
+            <!-- Placeholder content for music portfolio -->
+            <section id="music-portfolio">
+                <h3>Music Portfolio</h3>
+                <!-- Embed the Bandcamp player here -->
+                <div class="music-player">
+                    <h1>My Music Player</h1>
+                    <audio id="audio-player" controls>
+                        <source src="Selling Shells.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="controls">
+                        <button id="play-pause-btn">Play</button>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="Portrait.jpg" alt="Justin Spanos Photo">
+            </div>
+
+            <div class="about-general">
+                <h2>About Me</h2>
+                <p>Hello, I'm Justin Spanos. I grew up in the enchanting landscapes of Central Florida 
+                    but have been fortunate to explore both the country and other corners of the world. 
+                    My academic journey is diverse, holding an A.A. degree with a focus on audio engineering and an A.S. 
+                    certificate in Computer Programming. My thirst for knowledge drives me to pursue a Bachelor's degree in 
+                    Computer Science. Beyond academics, I find solace in the arts 
+                    – reading, writing, and sketching are my cherished pastimes.
+                <br><br>
+                These three sections provide a comprehensive overview of my diverse interests and experiences, encompassing 
+                both the technical and creative realms. I'm excited to continue exploring and innovating in the worlds of technology, 
+                music, and multimedia content creation.</p>
+            </div>
+    
+            <div class="about-coding">
+                <h3>Coding</h3>
+                <p>
+                    My journey into the world of coding has been both enriching and dynamic. 
+                    While I may have only dabbled in freelance web design, I've honed my skills during two significant internships. At D.M.E., 
+                    I diligently maintained their documentation and crafted web pages in SharePoint using HTML and CSS. 
+                    This experience also exposed me to the intricate workings of the MVC and agile model. 
+                    My time at Brown and Brown was equally illuminating. As part of an intern group project, 
+                    we harnessed Azure DevOps to extract meta data, visualizing it with Power BI to enhance business processes. 
+                    My technical skills include Python, C#, HTML, CSS, JavaScript, Azure DevOps, and Power BI.
+                </p>
+            </div>
+    
+            <div class="about-music">
+                <h3>Music and Audio Technology</h3>
+                <p>Music has been an integral part of my life. I started writing lyrics around 8 years oldand, and in 2007, 
+                    picked up the guitar, igniting a lifelong passion. My musical skillset has expanded to include bass, piano, 
+                    ukulele, and have recently been learning the banjo. I possess a strong foundation in music theory and instrumentation.<br><br>
+
+                    Beyond creating music, I've also ventured into the realm of live audio engineering. For a period, 
+                    I was the audio engineer for a local church, where I was responsible for delivering pristine sound 
+                    experiences during live services.<br><br>
+                    
+                    In addition to music and coding, I have a creative side that shines 
+                    when working on original pieces for short video content. These projects have allowed me to combine my 
+                    passion for music and storytelling, creating impactful and memorable audiovisual experiences.
+                    </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Email: <a href="mailto:justinspanos96@gmail.com">justinspanos96@gmail.com</a></li>
+            <li>Phone: <a href="tel:3864020192">386-402-0192</a></li>
+        </ul>
+        <h3>For questions and inquiries:</h3>
+        <form id="contact-form" action="mailto:justinspanos96@gmail.com" method="post" enctype="text/plain">
+
+            <input type="text" id="name" name="name" placeholder="Your Name*" required><br><br>
+    
+            <input type="email" id="email" name="email" placeholder="Your E-Mail*" required><br><br>
+    
+            <textarea id="message" name="message" rows="4" placeholder="Your Message*" required></textarea><br><br>
+    
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    
+    <!-- JavaScript Section -->
+    <script src="script.js"></script>
+
+</body>
+</html>
