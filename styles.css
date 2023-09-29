@@ -1,0 +1,272 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navigation bar */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #0B8BDE;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #F5B400;
+    border-bottom: 2px solid #A87C00;
+}
+
+/* Style the sections */
+section {
+    padding: 50px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Home Section */
+#home {
+    background-image: url('studio\ copy.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color for contrast */
+    text-align: center; /* Center the text vertically and horizontally */
+    padding: 100px 0; /* Add padding for spacing */
+}
+
+
+/* Style the Services I Offer section */
+#services {
+    background-color: #0B8BDE;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services h2 {
+    color: #fff;
+}
+
+.service-columns {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.service-column {
+    width: 48%; /* Adjust the width as needed (less than 50% to accommodate spacing) */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't affect column width */
+}
+
+.service-column h3 {
+    color: #333;
+}
+
+.service-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-column li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+/* Style the portfolio submenu */
+#portfolio ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#portfolio ul li {
+    margin: 0 10px;
+}
+
+#portfolio ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#portfolio ul li a:hover {
+    background-color: #F5B400;
+    border: 1px solid #A87C00;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hide coding and music portfolio sections by default */
+#coding-portfolio,
+#music-portfolio {
+    display: none;
+}
+
+/* Style the About Me section */
+#about {
+    background-color: #0B8BDE;
+    padding: 50px 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+}
+
+.about-photo img {
+    /*max-width: 100%;*/
+    width: 300px;
+    height: auto;
+    border-radius: 0.5%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-general, .about-coding, .about-music {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.about-general h2, .about-coding h3, .about-music h3 {
+    color: #333;
+}
+
+.about-general p, .about-coding p, .about-music p {
+    color: #777;
+}
+
+/* Music Player */
+
+.music-player {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Style the Contact Me section */
+#contact {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+#contact p, #contact ul {
+    color: #777;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #f1c40f;
+    color: #333;
+}
+
