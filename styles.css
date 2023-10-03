@@ -9,7 +9,7 @@ body, ul {
 #navbar {
     position: sticky;
     top: 0;
-    background-color: #0B8BDE;
+    background-color: #035285;
     color: #fff;
     padding: 10px 0;
     z-index: 100;
@@ -61,7 +61,7 @@ h1, h2, h3 {
     background-repeat: no-repeat;
     color: #fff; /* Set text color for contrast */
     text-align: center; /* Center the text vertically and horizontally */
-    padding: 100px 0; /* Add padding for spacing */
+    padding: 350px 0; /* Add padding for spacing */
 }
 
 #home div{
@@ -75,7 +75,7 @@ h1, h2, h3 {
 /* Style the Services I Offer section */
 #services {
     background-color: #0B8BDE;
-    padding: 50px 0;
+    padding: 70px 60px;
     text-align: center;
 }
 
