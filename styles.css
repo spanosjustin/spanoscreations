@@ -64,6 +64,13 @@ h1, h2, h3 {
     padding: 100px 0; /* Add padding for spacing */
 }
 
+#home div{
+    background-color: #0B8BDE;
+    padding: 12px;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
 
 /* Style the Services I Offer section */
 #services {
@@ -152,12 +159,12 @@ h1, h2, h3 {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; /* Center the content vertically */
 }
 
 .about-photo img {
-    /*max-width: 100%;*/
+    margin-left: 30%;
     width: 300px;
     height: auto;
     border-radius: 0.5%;
@@ -165,8 +172,7 @@ h1, h2, h3 {
 }
 
 .about-general, .about-coding, .about-music {
-    width: calc(33.33% - 20px);
-    margin-right: 20px;
+    width: calc(40.33% - 10px);
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -215,6 +221,8 @@ input[type="range"] {
     width: 100%;
 }
 
+
+
 /* Style the Contact Me section */
 #contact {
     background-color: #f7f7f7;
@@ -228,6 +236,17 @@ input[type="range"] {
 
 #contact p, #contact ul {
     color: #777;
+}
+
+.contact-li{
+    text-decoration: none;
+    color: #777;
+    transition: .5s;
+}
+
+.contact-li:hover{
+    color:#000000;
+    border-bottom: 2px solid #000000;
 }
 
 #contact-form {
